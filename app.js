@@ -159,11 +159,13 @@ async function fetchUpgrades() {
 // alternatively may be interrupted by another crunch starting, if user clicks fast enough.
 function startCrunch() {
   if (typeof audioCallback !== undefined) clearTimeout(audioCallback);
-  audio.currentTime = 50;
-  audio.play(); // Now play 350ms of the crunch, unless interrupted first
+  audio.currentTime = 0; // TODO: WAS 50 wip
+  audio.play(); // Now play 350ms of the crunch, unless interrupted first // TODO: WAS 400 WIP
   setTimeout(() => audio.play(), 0); // Now play 350ms of the crunch, unless interrupted first
   audioCallback = setTimeout(() => audio.pause(), 400);
 }
+// TODO: Disaster! Now prevents cookie counter from updating while audio is on, and no time to fix!
+// TODO: Disaster! Change to audio means now it doesn't play priperly, no time tofix
 
 // #endregion
 
