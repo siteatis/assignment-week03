@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#imgCookie {
+  width: 55%;
+  height: 55%;
+}
+
+@media (width >= 800px) {
+  #imgCookie {
+    width: 30%;
+    height: 30%;
+  }
+}

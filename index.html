@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Cookie Cookie Cookie - the game that wastes your brain</title>
+  </head>
+  <body>
+    <audio src="assets/bite-potato-chips-83946.mp3"></audio>
+    <img
+      id="imgCookie"
+      src="assets/cookie-cc0-400.jpg"
+      alt="A freshly-baked cookie"
+      onclick="gainCookies(1)"
+    />
+    <div id="divControls">
+      <button id="btnReset">RESTART GAME!</button>
+      <label for="chkAudio">ADD SOUND!</label>
+      <input type="checkbox" id="chkAudio" name="chkAudio" value="Yes" />
+    </div>
+    <div id="divInfo">
+      <p id="pCookies"></p>
+      <p id="pRate"></p>
+    </div>
+    <div id="divUpgrades"></div>
+  </body>
+</html>
